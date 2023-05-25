@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:io';
-import 'package:chatgpt_app/views/homescreen.dart';
 import 'package:chatgpt_app/views/mail.dart';
 
 class ScanScreen extends StatefulWidget {

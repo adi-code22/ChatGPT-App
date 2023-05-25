@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:chatgpt_app/views/homescreen.dart';
-import 'package:chatgpt_app/views/market.dart';
-import 'package:chatgpt_app/views/speakNative.dart';
+import 'views/homescreen/homescreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

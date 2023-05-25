@@ -1,3 +1,4 @@
+import 'package:chatgpt_app/views/chatpage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -38,27 +39,17 @@ class _SpeakNativeState extends State<SpeakNative> {
                     fontSize: 30, fontWeight: FontWeight.bold),
                 children: [
               TextSpan(
-                  text: "Speak",
+                  text: "AI-",
                   style: GoogleFonts.poppins(
                       color: Theme.of(context).primaryColorLight)),
               TextSpan(
-                  text: "Native",
+                  text: "Chat",
                   style: GoogleFonts.poppins(
                       color: Theme.of(context).primaryColor)),
             ])),
       ),
       body: SafeArea(
-        child: Stack(children: [
-          Positioned(
-            top: 0,
-            left: 0,
-            child: Container(
-              color: Colors.white,
-              height: 110,
-              width: 400,
-            ),
-          ),
-        ]),
+        child: ChatPage(),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:chatgpt_app/views/homescreen.dart';
+
+import 'homescreen/homescreen.dart';
 
 class TravelCard extends StatefulWidget {
   const TravelCard({Key? key}) : super(key: key);
@@ -64,7 +65,7 @@ class _TravelCardState extends State<TravelCard> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Stack(
@@ -83,7 +84,7 @@ class _TravelCardState extends State<TravelCard> {
                               ),
                               child: Column(
                                 children: [
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 200,
                                   ),
                                   Row(
@@ -120,7 +121,7 @@ class _TravelCardState extends State<TravelCard> {
                                       )
                                     ],
                                   ),
-                                  Divider(),
+                                  const Divider(),
                                   Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -155,7 +156,7 @@ class _TravelCardState extends State<TravelCard> {
                                       )
                                     ],
                                   ),
-                                  Divider(),
+                                  const Divider(),
                                   Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -190,12 +191,12 @@ class _TravelCardState extends State<TravelCard> {
                                       )
                                     ],
                                   ),
-                                  Divider()
+                                  const Divider()
                                 ],
                               ),
                             ),
                           )
-                        : SizedBox(),
+                        : const SizedBox(),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
@@ -204,7 +205,7 @@ class _TravelCardState extends State<TravelCard> {
                             border: Border.all(
                                 color: Theme.of(context).primaryColorLight),
                             borderRadius: BorderRadius.circular(25),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage('assets/tra2.jpg'))),
                       ),
@@ -225,7 +226,7 @@ class _TravelCardState extends State<TravelCard> {
                           !show
                               ? "See Travelling History!"
                               : "Hide Travelling History!",
-                          style: TextStyle(fontSize: 15),
+                          style: const TextStyle(fontSize: 15),
                         ),
                       ),
                       Icon(!show
@@ -247,7 +248,7 @@ class _TravelCardState extends State<TravelCard> {
                             //       builder: (context) => TravelCard(),
                             //     ));
                           },
-                          child: ShadowButton(
+                          child: const ShadowButton(
                             width: 105,
                             fname: 'Credits\n',
                             fsize: 11,
@@ -262,7 +263,7 @@ class _TravelCardState extends State<TravelCard> {
                             //       builder: (context) => TravelCard(),
                             //     ));
                           },
-                          child: ShadowButton(
+                          child: const ShadowButton(
                             width: 105,
                             fname: 'Distance\n',
                             fsize: 11,
