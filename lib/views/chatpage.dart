@@ -51,6 +51,8 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
+  //initialise a variable with types.Message datatype and pass it to the _addMessage function
+
   void _handleAttachmentPressed() {
     showModalBottomSheet<void>(
       context: context,
